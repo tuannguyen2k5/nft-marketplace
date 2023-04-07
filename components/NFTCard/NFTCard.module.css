@@ -1,0 +1,28 @@
+
+.NFTCard{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 10rem;
+    text-align: center;
+    gap: 3rem;
+}
+.NFTCard_box{
+    background-color: var(--shadow-light-color);
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.NFTCard_box:hover{
+    box-shadow: var(--box-shadow);
+ }
+ .NFTCard_box_img_img{
+    border-radius: 1rem;
+ }
+.NFTCard_box:hover .NFTCard_box_img_img{
+    transform: scale(1.05);
+    
+}

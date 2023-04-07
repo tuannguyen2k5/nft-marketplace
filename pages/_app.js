@@ -1,5 +1,16 @@
-import '@/styles/globals.css'
+import "../styles/globals.css";
+require("dotenv").config()
+//INTRNAL IMPORT
+import { NavBar,Footer } from "../components/componentsindex";
+import { NFTMarketplaceProvider } from "@/context/NFTMarketPlaceContext";
+const MyApp = ({ Component, pageProps }) => (
+  <div>
+    <NFTMarketplaceProvider>
+    <NavBar />
+    <Component {...pageProps} />
+    <Footer/>
+    </NFTMarketplaceProvider>
+  </div>
+);
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+export default MyApp;
